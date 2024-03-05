@@ -1,0 +1,23 @@
+<nav class="navbar navbar-inverse navbar-static-top bg-dark">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Welcome to KSD</a>
+  
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+
+        <li {if condition="$channel eq 'index'"}class="active"{/if}><a href="/">Home</a></li>
+        <li {if condition="$channel eq 'browse'"}class="active"{/if}> <a href="browse.html">Browse </a></li>
+        <li {if condition="$channel eq 'search'"}class="active"{/if}><a href="search.html">Search</a></li>
+        <li {if condition="$channel eq 'statistics'"}class="active"{/if}><a href="statistics.html">Statistics</a></li>
+        <li {if condition="$channel eq 'download'"}class="active"{/if}><a href="download.html">Download</a></li>
+        <li {if condition="$channel eq 'about'"}class="active"{/if}><a href="about.html">Contact us</a></li>
+      </ul>
+    </div>
+  </nav>
